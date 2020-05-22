@@ -59,3 +59,25 @@ margin: 25px;
     height: 40px;
     color: white;
 }
+input[type="radio"]{
+    margin-top: 22px;
+}
+
+option{
+    color: gray;
+}
+
+.btn-info{
+    margin-top: 20px;
+    font-size: 18px;
+    width: 150px;
+    margin-left: 80px;
+    margin-bottom: 20px;
+}
+
+.btn-warning{
+    margin-top: 20px;
+    font-size: 18px;
+    width: 150px;
+    margin-bottom: 20px;
+}
