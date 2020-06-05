@@ -1,0 +1,21 @@
+body {
+    background-image: url(4.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#ui {
+    background-color: #333;
+    padding: 50px;
+    margin-top: 60px;
+    border-radius: 10px;
+    float: right;
+    opacity: 0.8;
+}
+
+#ui label,
+h1,
+a {
+    color: #fff;
+}
