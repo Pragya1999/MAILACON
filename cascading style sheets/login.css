@@ -3,6 +3,7 @@ body {
     height: 100%;
 }
 
+
 body {
     margin: 0;
     overflow: hidden;
@@ -172,7 +173,7 @@ body {
 
 .fundo,
 .fundo-cor {
-    background: url(6.jpg);
+    background: url(./../images/6.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.8;
