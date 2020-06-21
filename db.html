@@ -10,7 +10,35 @@
 	<title>DASHBOARD</title>
 	
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="db.css">
+
+
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
+  <script>
+    google.charts.load('current', {packages: ['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+      // Define the chart to be drawn.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Element');
+      data.addColumn('number', 'Percentage');
+      data.addRows([
+        ['Emails', 68],
+        ['postcards', 23],
+        ['invitations', 9 ]
+      ]);
+
+      // Instantiate and draw the chart.
+      var options={
+        title:'Audience Activities'
+      };
+
+      var chart = new google.visualization.PieChart(document.getElementById('myPieChart'));
+      chart.draw(data, null);
+    }
+  </script>
     
 	</head>
     <body>
@@ -78,8 +106,47 @@
     <p class="lead">Grow loyalty & revenue by delivering the right message through the right channels. Exceed customer expectations. Get a demo of the marketing cloud that takes you higher. Cross-Channel Integration. Centralised Data Platform. Personalised Experience.</p>
   </div>
 </div>
+<!--slider-->
+    <div id="slider">
+    <div id="headerSlider" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#headerSlider" data-slide-to="0" class="active"></li>
 
- 
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="s1.jpg" class="d-block w-100" alt="First slide">
+      <div class ="carousel-caption">
+       
+      <p>Email automation is the ability to send time or action triggered emails to subscribers with relevant information. Automation is useful for a variety of different marketing purposes. Whether it’s a triggered workflow that helps nurture new leads, birthday greetings that add a personal touch, or automated blog updates that take the legwork out of staying in touch with your audience — email automation makes email marketing more efficient, personalized, and relevant.</p>
+      <br>
+      <br>
+      <h5>"Optimize your marketing" </h5>
+      <p>Connect your store to create custom pop-up forms, send automated e-commerce emails, and recommend products your customers will love.</p>
+      <input type="Submit" name="Create" value="create" class="btn btn-primary btn-block ">
+      </div>
+
+</div>
+    </div>
+
+
+    <!-- Identify where the chart should be drawn. -->
+  <div id="myPieChart"/>
+
+<!--card-->
+<div class="card">
+  <div class="card-header">
+    
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Create a Campaign /h5>
+    <p class="card-text">Campaigns can be emails, ads, or other messages you share with your contacts. Try your hand at design by creating and sending a test campaign</p>
+    <a href="#" class="btn btn-primary">Create</a>
+  </div>
+</div>
+  
+  
+
 <script>
     	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js">
 	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js">
